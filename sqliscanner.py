@@ -11,6 +11,7 @@ s.headers["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit
 
 # below code is for logging to your local DVWA
 # uncomment it if you want to use this on DVWA
+
 # login_payload = {
 #     "username": "admin",
 #     "password": "password",
