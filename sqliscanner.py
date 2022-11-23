@@ -86,7 +86,7 @@ def is_vulnerable(response):
 
 def scan_sql_injection(url):
     # test on URL
-    
+
     for c in "\"'":
         # add quote/double quote character to the URL
         new_url = f"{url}{c}"
@@ -136,5 +136,11 @@ def scan_sql_injection(url):
                 print("[+] SQL Injection vulnerability detected, link:", url)
                 print("[+] Form:")
                 pprint(form_details)
-                break   
+                break
+
+
+if __name__ == "__main__":
+    import sys
+    url = sys.argv[1]
+    scan_sql_injection(url)
 
