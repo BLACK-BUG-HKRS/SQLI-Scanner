@@ -19,7 +19,11 @@ s.headers["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit
 # # change URL to the login page of your DVWA login URL
 # login_url = "http://localhost:8080/DVWA-master/login.php"
 
-
+# # login
+# r = s.get(login_url)
+# token = re.search("user_token'\s*value='(.*?)'", r.text).group(1)
+# login_payload['user_token'] = token
+# s.post(login_url, data=login_payload)
 
 
 
