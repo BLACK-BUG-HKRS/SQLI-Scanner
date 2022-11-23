@@ -26,6 +26,9 @@ s.headers["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit
 # login_payload['user_token'] = token
 # s.post(login_url, data=login_payload)
 
-
+def get_all_forms(url):
+    """Given a `url`, it returns all forms from the HTML content"""
+    soup = bs(s.get(url).content, "html.parser")
+    return soup.find_all("form")
 
 
