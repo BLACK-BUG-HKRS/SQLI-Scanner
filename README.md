@@ -14,7 +14,6 @@ python sqliscanner.py http://testphp.vulnweb.com/artists.php?artist=1
 Output:
 
 ```
-[!] Trying http://testphp.vulnweb.com/login.php"
-[!] Trying http://testphp.vulnweb.com/login.php'
-[+] Detected 2 forms on http://testphp.vulnweb.com/login.php.
+[!] Trying http://testphp.vulnweb.com/artists.php?artist=1"
+[+] SQL Injection vulnerability detected, link: http://testphp.vulnweb.com/artists.php?artist=1".
 ```
